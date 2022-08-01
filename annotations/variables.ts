@@ -7,3 +7,12 @@ let nothing: undefined = undefined;
 
 //built in objects
 let now: Date = new Date();
+
+//Arrays
+let colors: string[] = ['red', 'green', 'blue', 'yellow'];
+let myNumbres: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let truths: boolean[] = [true, false, true, false, false, false];
+
+//classes
+class Car {}
+let car: Car = new Car();
