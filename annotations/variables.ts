@@ -31,5 +31,16 @@ const longNumber: (i: number) => void = (i: number) => {
 //when to use annotations
 //1) Function that returns the 'any' type
 const json = '{"x": 10, "y": 20}';
-const coordinates = JSON.parse(json);
+const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates); // {x:10 , y:20}
+
+//2) when we declare a variable on one line
+//and initalizate it later
+let words = ['red', 'green', 'blue'];
+let foundWord: boolean;
+
+for (let i = 0; i < words.length; ++i) {
+  if (words[i] === 'green') {
+    foundWord = true;
+  }
+}
